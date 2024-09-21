@@ -1,29 +1,47 @@
 <style>
-    #Subscribe{
+    .Subscribe{
         background-color: rgb(200, 0, 0);
         color: white;
         border: none;
-        height: 36px;
-        width: 105px;
+        padding: 10px 16px;
         border-radius: 2px;
         cursor: pointer;
         margin-right: 8px;
+        transition: opacity 0.3s;
+        vertical-align: top;
     }
-
+    
+    .Subscribe:hover{
+        opacity: 0.8;
+    }
+    .Subscribe:active{
+        opacity :0.5;
+    }
+    
     .Join{
+        vertical-align: top;
         background-color: white;
         color: rgb(8, 89, 181);
         border-color: rgb(8, 89, 181);
         border-style: solid;
         border-radius: 2px;
         border-width: 1px;
-        height: 36px;
-        width: 65px;
         cursor: pointer;
         margin-right: 8px;
+        transition: background-color 0.15s , color 0.15s;
+        padding: 9px 16px;
     }
-
+    
+    .Join:hover{
+        color: white;
+        background-color: rgb(9, 128, 255);
+    }
+    .Join:active{
+        opacity: 0.7;
+    }
+    
     .Tweet{
+        vertical-align: top;
         height: 36px;
         background-color: rgb(9, 128, 255);
         color: white;
@@ -33,11 +51,15 @@
         font-weight: bold;
         font-size: 15px;
         cursor: pointer;
+        transition: box-shadow 0.15s;
+    }
+    .Tweet:hover{
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
     }
 
 </style>
 
-<button id="Subscribe">
+<button class="Subscribe">
     SUBSCRIBE
 </button>
 
