@@ -1,17 +1,9 @@
-p {
-    font-family: Roboto, Arial;
-    margin: 0;
-    padding: 0;
-}
+
 
 .thumbnail {
     width: 100%;
 
 }
-
-
-
-
 
 .channel-picture {
     display: inline-block;
@@ -39,9 +31,7 @@ p {
     font-weight: 500;
     line-height: 20px;
     margin-bottom: 12px;
-
 }
-
 .video-author,
 .video-attr {
     font-size: 12px;
