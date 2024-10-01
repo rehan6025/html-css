@@ -2,7 +2,6 @@
 
 .thumbnail {
     width: 100%;
-
 }
 
 .channel-picture {
@@ -17,12 +16,14 @@
 }
 
 .profile-picture {
-    width: 40px;
+    width: 36px;
     border-radius: 60px;
 }
 
 .thumbnail-row {
-    margin-bottom: 12px;
+    margin-bottom: 8px;
+    position: relative;
+    
 }
 
 .video-title {
@@ -40,6 +41,7 @@
 
 .video-author {
     margin-top: 4px;
+    margin-bottom: 2px;
 }
 
 .video-info-grid {
@@ -49,8 +51,43 @@
 
 
 .video-grid {
+    padding: 20px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 16px;
     row-gap: 40px;
+}
+
+@media (max-width:750px){
+    .video-grid{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:751px) and (max-width:1099){
+    .video-grid{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media(min-width:1100px ){
+    .video-grid{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+.video-length{
+    background-color: black;
+    display: inline-block;
+    color: white;
+    position: absolute;
+    bottom: 10px;
+    right: 5px;
+    font-size: 12px;
+    border-radius: 2px;
+    padding: 4px 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
 }

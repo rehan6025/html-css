@@ -4,12 +4,14 @@
     flex-direction: row;
     justify-content: space-between;
     margin: 0;
+    margin-bottom: 20px;
     position: fixed;
     top: 0px;
     left: 0px;
     right: 0px;
     background-color: white;
     border-bottom: 1px solid rgb(210, 210, 210);
+    z-index: 100;
 }
 
 .left-section{
@@ -29,7 +31,7 @@
 }
 
 .right-section{
-    
+    position: relative;
     display: flex;
     align-items: center;
     width: 180px;
@@ -59,8 +61,28 @@
     margin-left: -1;
     margin-right: 8px;
     background-color: rgb(247,247,247);
+    flex-direction: column;
     
+    position: relative;
 }
+
+.search-button .tooltip{
+    position: absolute;
+    padding: 10px 8px;
+    background-color: gray;
+    color: white;
+    border-radius: 2px;
+    font-size: 12px;
+    bottom: -50px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+}
+
+.search-button:hover .tooltip{
+    opacity: 1;
+}
+
 .search-icon{
     height: 24px;
 }
@@ -74,6 +96,26 @@
     align-items: center;
     justify-content: center;
     background-color: rgb(247,247,247);
+    flex-direction: column;
+    position: relative;
+}
+
+.voice-search-button .tooltip{
+    position: absolute;
+    padding: 10px 8px;
+    background-color: gray;
+    color: white;
+    border-radius: 2px;
+    font-size: 12px;
+    bottom: -50px;
+    width: 120px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+}
+.voice-search-button:hover .tooltip{
+    opacity: 1;
+
 }
 .voice-search-icon{
     height: 24px;
@@ -102,6 +144,37 @@
 .right-section .upload-icon{
     height: 24px;
 }
+.upload-icon-container ,
+.apps-icon-container
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.upload-icon-container .tooltip,
+.apps-icon-container .tooltip
+
+{
+    position: absolute;
+    bottom: -58px;
+    padding: 10px 8px;
+    font-size: 12px;
+    background-color: gray;
+    color: white;
+    border-radius: 2px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+}
+.upload-icon-container:hover .tooltip,
+.apps-icon-container:hover .tooltip{
+    opacity: 1;
+}
+
+
+
 .right-section .apps-icon{
     height: 24px;
 }
@@ -111,4 +184,19 @@
 .right-section .my-channel-icon{
     height: 32px;
     border-radius: 16px;
+}
+
+.noti-number{
+    position: absolute;
+    background-color: rgb(204, 0, 0);
+    color: white;
+    font-size: 10px;
+    right: 50px;
+    top: 12px;
+    padding: 2px 5px;
+    border: 2px solid white;
+    border-radius: 19px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
